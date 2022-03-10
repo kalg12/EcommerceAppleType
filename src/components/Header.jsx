@@ -1,21 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/Global.css'
 import '../styles/Header.css'
 import menu from '../assets/icons/icon_menu.svg'
 import logo from '../assets/logos/logo_yard_sale.svg'
 import shoppingCart from '../assets/icons/icon_shopping_cart.svg'
+import Menu from '../components/Menu'
+import MenuMovil from '../components/MenuMovil'
 
 const Header = () => {
 
-    /* const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(false);
 
 	const handleToggle = () => {
 		setToggle(!toggle);
 	}
- */
-  return (/*  */
+
+	const [toggleMenu, setToggleMenu] = useState(false);
+
+	const handleToggleMenu = () => {
+		setToggleMenu(!toggleMenu);
+	}
+
+  return (
     <nav>
-			<img src={menu} alt="menu" className="menu" />
+			<img src={menu} alt="menu" className="menu" onClick={handleToggleMenu}/>
 			<div className="navbar-left">
 				<img src={logo} alt="logo" className="nav-logo" />
 				<ul>
@@ -41,7 +49,7 @@ const Header = () => {
 			</div>
 			<div className="navbar-right">
 				<ul>
-					<li className="navbar-email" /* onClick={handleToggle} */>
+					<li className="navbar-email" onClick={handleToggle}>
 						luciano19940@hotmail.com
 					</li>
 					<li className="navbar-shopping-cart">
@@ -50,7 +58,8 @@ const Header = () => {
 					</li>
 				</ul>
 			</div>
-			{/* {toggle && <Menu />} */}
+			{toggle && <Menu />}
+			{toggleMenu && <MenuMovil />}
 		</nav>
   )
 }
