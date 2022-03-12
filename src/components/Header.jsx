@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import '../styles/Global.css'
 import '../styles/Header.css'
 import menu from '../assets/icons/icon_menu.svg'
 import logo from '../assets/logos/logo_yard_sale.svg'
@@ -31,16 +30,16 @@ const Header = () => {
 						<a href="/">Inicio</a>
 					</li>
 					<li>
-						<a href="/">Clothes</a>
+						<a href="/">Mac</a>
 					</li>
 					<li>
-						<a href="/">Electronics</a>
+						<a href="/">Ipad</a>
 					</li>
 					<li>
-						<a href="/">Furnitures</a>
+						<a href="/">iPhone</a>
 					</li>
 					<li>
-						<a href="/">Toys</a>
+						<a href="/">Watch</a>
 					</li>
 					<li>
 						<a href="/">Contacto</a>
