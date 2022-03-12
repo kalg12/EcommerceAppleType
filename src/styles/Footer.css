@@ -9,10 +9,12 @@
 .copyright{
     font-size: var(--sm);
     color: var(--very-light-pink);
+    text-align: center;
 }
 
 .footer-links ul{
     list-style-type: none;
+    text-align: center;
 }
 
 .footer-links li{
