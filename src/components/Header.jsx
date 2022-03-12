@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import '../styles/Header.css'
+import '../styles/Global.css'
 import menu from '../assets/icons/icon_menu.svg'
 import logo from '../assets/logos/logo_yard_sale.svg'
 import shoppingCart from '../assets/icons/icon_shopping_cart.svg'

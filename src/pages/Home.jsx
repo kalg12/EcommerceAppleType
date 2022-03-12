@@ -1,5 +1,6 @@
 import React from 'react'
-import Banner from '../components/Banner'
+import BannerIphoneSE from '../components/BannerIphoneSE'
+import BannerIphonePro from '../components/BannerIphonePro'
 import Header from '../components/Header'
 import { ProductList } from '../components/ProductList'
 
@@ -8,7 +9,8 @@ const Home = () => {
   return (
     <>
     <Header />
-    <Banner />
+    <BannerIphoneSE />
+    <BannerIphonePro />
     <ProductList />
     </>
   )
